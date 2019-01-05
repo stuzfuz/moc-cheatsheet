@@ -1,0 +1,1 @@
+View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item, parent, false);

@@ -1,0 +1,94 @@
+\documentclass[12pt,a4paper,oneside,ngerman]{scrreprt}
+
+\usepackage[automark]{scrpage2}
+\usepackage{graphicx} 
+\usepackage{totPages,scrextend}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{pdfpages}
+\usepackage{color}
+\usepackage{minted}
+
+\pagestyle{scrheadings} 
+
+\begin{document}
+
+%\includepdf[pages=1,pagecommand={
+%    \begin{tikzpicture}[remember picture, overlay]
+%            \node[xshift=-18.3cm, yshift=-4.50cm] at (current page.north east) { X };
+%            \node[xshift=-11.5cm, yshift=-5.3cm] at (current page.north east) { Peter Studener};
+%            \node[xshift=-11.4cm, yshift=-6.3cm] at (current page.north east) { 36h };
+%    \end{tikzpicture}
+%}]{MOC5P_WS1819.pdf}
+
+%\clearscrheadfoot
+\ofoot[] {\begin{small}\pagemark~von \ref{TotPages}\end{small}}
+\ifoot[]{\begin{small} Peter Studener, S1610307040\end{small}}
+
+\renewcommand{\chapterpagestyle}{scrheadings}
+\def\labelitemi{-}
+
+\setcounter{chapter}{0}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\tableofcontents 
+
+\chapter{Cheatsheet}
+
+
+
+
+
+\section{Android Manifest}
+
+\subsection{Application}
+\inputminted[breaklines]{xml}{application.xml}
+
+\subsection{Activity + Intent Filter}
+\inputminted[breaklines]{xml}{activity.xml}
+
+\subsection{Permissions}
+\inputminted[breaklines]{xml}{permissions.xml} 
+
+
+
+
+
+
+\section{Application}
+
+\subsection{Application (Authentication + Firebase)}
+\inputminted[breaklines]{java}{application.java}
+
+\subsection{Firebase}
+\inputminted[breaklines]{java}{firebase.java}
+
+
+
+
+
+\section{Activity}
+
+\subsection{Broadcast Receiver}
+\inputminted[breaklines]{java}{bcr.java}
+
+\subsection{Broadcast Receiver Register/Unregister}
+\inputminted[breaklines]{java}{bcregister.java}
+
+\subsection{Async Task}
+\inputminted[breaklines]{java}{asynctask.java}
+
+\subsection{Click Handler}
+\inputminted[breaklines]{java}{onclickhandler.java}
+
+\subsection{Fragment Manager}
+\inputminted[breaklines]{java}{fragmentmanager.java}
+
+\subsection{Layout Inflater}
+\inputminted[breaklines]{java}{layoutinflater.java}
+
+\subsection{Start Intent}
+\inputminted[breaklines]{java}{startintent.java}
+
+\end{document}
